@@ -13,3 +13,122 @@
  *= require_tree .
  *= require_self
  */
+
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size:12px;
+}
+
+h1{
+    font-size: 14px;
+}
+
+ul{
+    list-style: none;
+}
+
+a,
+a:visited,
+a:active{
+
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+ul li{
+    display: block;
+    line-height: 20px;
+}
+
+#site-container{
+    width: 1010px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #cc0000;
+}
+
+#top-header{
+    width: 100%;
+    height: 50px;
+    background-color: #DADADA;
+    border: 1px solid #ccc;
+}
+
+#top-header .slogan{
+    display: block;
+    float: left;
+    width: 70%;
+    padding: 15px 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#content-block{
+    padding-bottom: 30px;
+}
+
+#content-block .left{
+    display: block;
+    float:left;
+    width: 20%;
+}
+
+#content-block .right{
+    display: block;
+    float:left;
+    width: 77%;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+#app-msg{
+    height: 20px;
+    background-color: darkorange;
+}
+
+.menu-container{
+    padding-top: 10px;
+}
+
+.menu-container .menu-caption{
+    text-align: center;
+    font-weight: bold;
+}
+
+ul.left-menu{
+    margin: 0;
+    padding: 0;
+}
+
+ul.left-menu li{
+
+}
+
+ul.left-menu li a{
+
+}
+
+ul.left-menu li a:hover{
+
+}
+
+#footer{
+    background-color: lightgray;
+    border: 1px solid #B00100;
+}
+
+#footer .footer-text{
+    padding-top: 10px;
+}
+
+
+.clear{
+    clear: both;
+}

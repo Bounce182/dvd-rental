@@ -8,7 +8,33 @@
 </head>
 <body>
 
-<%= yield %>
+<div id="site-container">
+    <div id="top-header">
+      <div class="slogan">DVD Rental Shop</div>
+      <div>Hello guest?</div>
+      <div class="clear"></div>
+    </div>
+    <div id="content-block">
+      <div class="left">
+        <div class="menu-container">
+          <div class="menu-caption">MAIN MENU</div>
+          <ul class="left-menu">
+            <li>Home</li>
+            <li>DVD List</li>
+            <li>Login</li>
+          </ul>
+        </div>
+      </div>
+      <div class="right">
+        <div id="app-msg">Here comes app message!</div>
+        <%= yield %>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div id="footer">
+      <div class="footer-text">&copy; DVD Rental Shop, 2014</div>
+    </div>
+</div>
 
 </body>
 </html>

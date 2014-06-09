@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="685abf0f-29dc-4741-913e-68e827473fef" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/app/views/dvds/index.html.erb" afterPath="$PROJECT_DIR$/ror-app/app/views/dvds/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/config/routes.rb" afterPath="$PROJECT_DIR$/ror-app/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/app/views/index/index.html.erb" afterPath="$PROJECT_DIR$/ror-app/app/views/index/index.html.erb" />
     </list>
     <ignored path="dvd-rental.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -109,8 +108,8 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ror-app/app/views/index/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.019035533" vertical-offset="0" max-vertical-offset="788">
-              <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="788">
+              <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -665,8 +664,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ror-app/app/views/index/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019035533" vertical-offset="0" max-vertical-offset="788">
-          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="788">
+          <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
           <folding />
         </state>
       </provider>

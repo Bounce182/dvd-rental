@@ -19,6 +19,8 @@ class DvdsController < ApplicationController
 
   # GET /dvds/1/edit
   def edit
+    @genres = Genre.all
+    @languages = Language.all
   end
 
   # POST /dvds
@@ -40,6 +42,16 @@ class DvdsController < ApplicationController
   # PATCH/PUT /dvds/1
   # PATCH/PUT /dvds/1.json
   def update
+
+    # Add delete here....
+
+    params[:dvd][:genres].each do |g|
+      if !g.empty?
+
+        @dvd.genres << Genre.find(g)
+      end
+    end
+
     respond_to do |format|
       if @dvd.update(dvd_params)
         format.html { redirect_to @dvd, notice: 'Dvd was successfully updated.' }
@@ -69,6 +81,6 @@ class DvdsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dvd_params
-      params.require(:dvd).permit(:title, :description, :year, :lang, :length, :rent_price)
+      params.require(:dvd).permit(:title, :description, :year, :length, :genres)
     end
 end

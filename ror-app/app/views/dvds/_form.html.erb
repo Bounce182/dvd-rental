@@ -24,8 +24,8 @@
     <%= f.number_field :year %>
   </div>
   <div class="field">
-    <%= f.label :lang %><br>
-    <%= f.text_field :lang %>
+    <%= f.label :genres %><br>
+    <%= f.select :genres, options_for_select(@genres.collect {|g| [g.title,g.id]}, @dvd.genres.map {|dg| dg.id}), {:include_blank=> false}, {:multiple => true} %>
   </div>
   <div class="field">
     <%= f.label :length %><br>

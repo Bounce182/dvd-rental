@@ -53,6 +53,10 @@ textarea{
     width: 200px;
 }
 
+select{
+    width: 202px;
+}
+
 #site-container{
     width: 1010px;
     margin-left: auto;

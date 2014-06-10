@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :languages
+
   get 'index/index'
 
   resources :genres

@@ -11,15 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140609200115) do
+ActiveRecord::Schema.define(version: 20140610075259) do
 
   create_table "dvds", force: true do |t|
     t.string   "title"
     t.text     "description"
     t.integer  "year",        limit: 4
-    t.string   "lang",        limit: 8
     t.integer  "length",      limit: 3
-    t.decimal  "rent_price",            precision: 10, scale: 2
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -30,6 +28,13 @@ ActiveRecord::Schema.define(version: 20140609200115) do
   end
 
   add_index "dvds_genres", ["dvd_id", "genre_id"], name: "index_dvds_genres_on_dvd_id_and_genre_id"
+
+  create_table "dvds_languages", id: false, force: true do |t|
+    t.integer "dvd_id"
+    t.integer "language_id"
+  end
+
+  add_index "dvds_languages", ["dvd_id", "language_id"], name: "index_dvds_languages_on_dvd_id_and_language_id"
 
   create_table "dvds_users", id: false, force: true do |t|
     t.integer "dvd_id"
@@ -42,6 +47,12 @@ ActiveRecord::Schema.define(version: 20140609200115) do
 
   create_table "genres", force: true do |t|
     t.string   "title",      limit: 100
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "languages", force: true do |t|
+    t.string   "title",      limit: 50
     t.datetime "created_at"
     t.datetime "updated_at"
   end

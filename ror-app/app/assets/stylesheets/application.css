@@ -35,7 +35,7 @@ ul{
 a,
 a:visited,
 a:active{
-
+    cursor: pointer;
 }
 
 a:hover{
@@ -55,16 +55,15 @@ ul li{
 }
 
 #top-header{
-    width: 100%;
     height: 50px;
-    background-color: #DADADA;
-    border: 1px solid #ccc;
+    background-color: #dadada;
+    border-bottom: 1px solid #cc0000;
 }
 
 #top-header .slogan{
     display: block;
     float: left;
-    width: 70%;
+    width: 500px;
     padding: 15px 10px;
     font-size: 25px;
     font-weight: bold;
@@ -77,18 +76,18 @@ ul li{
 #content-block .left{
     display: block;
     float:left;
-    width: 20%;
+    width: 200px;
 }
 
 #content-block .right{
     display: block;
     float:left;
-    width: 77%;
-    padding-top: 10px;
+    width: 780px;
     padding-left: 15px;
 }
 
 #app-msg{
+    margin-top: 10px;
     height: 20px;
     background-color: darkorange;
 }
@@ -108,24 +107,30 @@ ul.left-menu{
 }
 
 ul.left-menu li{
-
+    text-align: center;
 }
 
-ul.left-menu li a{
+ul.left-menu li:hover{
+    background-color: #efefef;
+}
 
+
+ul.left-menu li a{
+    color:#000000;
+    font-weight: normal;
 }
 
 ul.left-menu li a:hover{
-
+    background: none;
 }
 
 #footer{
+    border-top:1px solid #cc0000;
     background-color: lightgray;
-    border: 1px solid #B00100;
 }
 
 #footer .footer-text{
-    padding-top: 10px;
+
 }
 
 

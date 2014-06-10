@@ -43,12 +43,23 @@ class DvdsController < ApplicationController
   # PATCH/PUT /dvds/1.json
   def update
 
-    # Add delete here....
+    # Delete all dvd genre relations
+    @dvd.genres.delete_all
 
+    # Delete all dvd language relations
+    @dvd.languages.delete_all
+
+    # Adding genres to dvd
     params[:dvd][:genres].each do |g|
       if !g.empty?
-
         @dvd.genres << Genre.find(g)
+      end
+    end
+
+    # Adding languages to dvd
+    params[:dvd][:languages].each do |l|
+      if !l.empty?
+        @dvd.languages << Language.find(l)
       end
     end
 
@@ -81,6 +92,9 @@ class DvdsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dvd_params
-      params.require(:dvd).permit(:title, :description, :year, :length, :genres)
+      params.require(:dvd).permit(:title, :description, :year, :length)
     end
+
+    #def delete
+
 end

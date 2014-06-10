@@ -1,0 +1,35 @@
+<h1>Listing user_dvds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dvd</th>
+      <th>User</th>
+      <th>Rent date</th>
+      <th>Return date</th>
+      <th>Total price</th>
+      <th>Returned</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_dvds.each do |user_dvd| %>
+      <tr>
+        <td><%= user_dvd.dvd_id %></td>
+        <td><%= user_dvd.user_id %></td>
+        <td><%= user_dvd.rent_date %></td>
+        <td><%= user_dvd.return_date %></td>
+        <td><%= user_dvd.total_price %></td>
+        <td><%= user_dvd.returned %></td>
+        <td><%= link_to 'Show', user_dvd %></td>
+        <td><%= link_to 'Edit', edit_user_dvd_path(user_dvd) %></td>
+        <td><%= link_to 'Destroy', user_dvd, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User dvd', new_user_dvd_path %>

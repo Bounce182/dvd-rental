@@ -28,7 +28,11 @@
     <%= f.select :genres, options_for_select(@genres.collect {|g| [g.title,g.id]}, @dvd.genres.map {|dg| dg.id}), {:include_blank=> false}, {:multiple => true} %>
   </div>
   <div class="field">
-    <%= f.label :length %><br>
+    <%= f.label :languages %><br>
+    <%= f.select :languages, options_for_select(@languages.collect {|l| [l.title,l.id]}, @dvd.languages.map {|dl| dl.id}), {:include_blank=> false}, {:multiple => true} %>
+  </div>
+  <div class="field">
+    <%= f.label :length %>(in minutes)<br>
     <%= f.number_field :length %>
   </div>
   <div class="actions">

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Dvd:</strong>
+  <%= @user_dvd.dvd_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_dvd.user_id %>
+</p>
+
+<p>
+  <strong>Rent date:</strong>
+  <%= @user_dvd.rent_date %>
+</p>
+
+<p>
+  <strong>Return date:</strong>
+  <%= @user_dvd.return_date %>
+</p>
+
+<p>
+  <strong>Total price:</strong>
+  <%= @user_dvd.total_price %>
+</p>
+
+<p>
+  <strong>Returned:</strong>
+  <%= @user_dvd.returned %>
+</p>
+
+<%= link_to 'Edit', edit_user_dvd_path(@user_dvd) %> |
+<%= link_to 'Back', user_dvds_path %>

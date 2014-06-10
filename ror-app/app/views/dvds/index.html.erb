@@ -9,7 +9,7 @@
       <th>Language</th>
       <th>Length</th>
       <th>Status</th>
-      <th colspan="3"></th>
+      <th colspan="4"></th>
     </tr>
   </thead>
 
@@ -17,11 +17,20 @@
     <% @dvds.each do |dvd| %>
       <tr>
         <td><%= dvd.title %></td>
-        <td><%= dvd.genres %></td>
+        <td>
+          <%= dvd.genres.map { |genre| genre.title}.join(', ') %>
+        </td>
         <td><%= dvd.year %></td>
-        <td><%=  %></td>
+        <td>
+          <%= dvd.languages.map { |language| language.title}.join(', ') %>
+        </td>
         <td><%= dvd.length %></td>
-        <td>jeigu nera - kada bus.</td>
+        <td>
+          <%=
+            dvd.users.count
+          %>
+        </td>
+        <td><%= link_to 'Rent', dvd %></td>
         <td><%= link_to 'Show', dvd %></td>
         <td><%= link_to 'Edit', edit_dvd_path(dvd) %></td>
         <td><%= link_to 'Delete', dvd, method: :delete, data: { confirm: 'Are you sure?' } %></td>

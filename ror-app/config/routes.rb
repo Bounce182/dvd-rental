@@ -1,17 +1,13 @@
 Rails.application.routes.draw do
   resources :rentals
-
   resources :languages
-
-  get 'index/index'
-
   resources :genres
-
   resources :dvds
-
   resources :users
 
   root to: "index#index"
+
+  get 'index/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

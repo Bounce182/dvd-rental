@@ -30,7 +30,7 @@
                 <% if !rental.returned? %>
                    Not available. Return date: <%= rental.return_date %>
                 <% else %>
-                  <%= link_to 'Available. Rent now!', rental %>
+                  <%= link_to 'Available. Add to rent now!', rental %>
                 <% end %>
           <% end %>
         </td>

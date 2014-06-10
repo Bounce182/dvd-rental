@@ -16,18 +16,18 @@
 </p>
 
 <p>
-  <strong>Lang:</strong>
+  <strong>Genres:</strong>
+  <%= @dvd.genres.map { |genre| genre.title}.join(', ') %>
+</p>
 
+<p>
+  <strong>Languages:</strong>
+  <%= @dvd.languages.map { |language| language.title}.join(', ') %>
 </p>
 
 <p>
   <strong>Length:</strong>
   <%= @dvd.length %>
-</p>
-
-<p>
-  <strong>Rent price:</strong>
-
 </p>
 
 <%= link_to 'Edit', edit_dvd_path(@dvd) %> |

@@ -1,10 +1,10 @@
 class RentalsController < ApplicationController
-  before_action :set_user_dvd, only: [:show, :edit, :update, :destroy]
+  before_action :set_rental, only: [:show, :edit, :update, :destroy]
 
   # GET /rentals
   # GET /rentals.json
   def index
-    @user_dvds = Rental.all
+    @rentals = Rental.all
   end
 
   # GET /rentals/1
@@ -14,7 +14,7 @@ class RentalsController < ApplicationController
 
   # GET /rentals/new
   def new
-    @user_dvd = Rental.new
+    @rental = Rental.new
   end
 
   # GET /rentals/1/edit
@@ -24,15 +24,15 @@ class RentalsController < ApplicationController
   # POST /rentals
   # POST /rentals.json
   def create
-    @user_dvd = Rental.new(user_dvd_params)
+    @rental = Rental.new(rental_params)
 
     respond_to do |format|
-      if @user_dvd.save
-        format.html { redirect_to @user_dvd, notice: 'User dvd was successfully created.' }
-        format.json { render :show, status: :created, location: @user_dvd }
+      if @rental.save
+        format.html { redirect_to @rental, notice: 'Rental was successfully created.' }
+        format.json { render :show, status: :created, location: @rental }
       else
         format.html { render :new }
-        format.json { render json: @user_dvd.errors, status: :unprocessable_entity }
+        format.json { render json: @rental.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -41,12 +41,12 @@ class RentalsController < ApplicationController
   # PATCH/PUT /rentals/1.json
   def update
     respond_to do |format|
-      if @user_dvd.update(user_dvd_params)
-        format.html { redirect_to @user_dvd, notice: 'User dvd was successfully updated.' }
-        format.json { render :show, status: :ok, location: @user_dvd }
+      if @rental.update(rental_params)
+        format.html { redirect_to @rental, notice: 'Rental was successfully updated.' }
+        format.json { render :show, status: :ok, location: @rental }
       else
         format.html { render :edit }
-        format.json { render json: @user_dvd.errors, status: :unprocessable_entity }
+        format.json { render json: @rental.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -54,21 +54,21 @@ class RentalsController < ApplicationController
   # DELETE /rentals/1
   # DELETE /rentals/1.json
   def destroy
-    @user_dvd.destroy
+    @rental.destroy
     respond_to do |format|
-      format.html { redirect_to user_dvds_url, notice: 'User dvd was successfully destroyed.' }
+      format.html { redirect_to rental_url, notice: 'Rental was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_user_dvd
-      @user_dvd = Rental.find(params[:id])
+    def set_rental
+      @rental = Rental.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def user_dvd_params
-      params.require(:user_dvd).permit(:dvd_id, :user_id, :rent_date, :return_date, :total_price, :returned)
+    def rental_params
+      params.require(:rental).permit(:dvd_id, :user_id, :rent_date, :return_date, :total_price, :returned)
     end
 end

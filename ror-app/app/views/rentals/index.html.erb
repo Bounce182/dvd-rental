@@ -1,4 +1,4 @@
-<h1>Listing user_dvds</h1>
+<h1>Listing rentals</h1>
 
 <table>
   <thead>
@@ -14,17 +14,17 @@
   </thead>
 
   <tbody>
-    <% @user_dvds.each do |user_dvd| %>
+    <% @rentals.each do |rental| %>
       <tr>
-        <td><%= user_dvd.dvd_id %></td>
-        <td><%= user_dvd.user_id %></td>
-        <td><%= user_dvd.rent_date %></td>
-        <td><%= user_dvd.return_date %></td>
-        <td><%= user_dvd.total_price %></td>
-        <td><%= user_dvd.returned %></td>
-        <td><%= link_to 'Show', user_dvd %></td>
-        <td><%= link_to 'Edit', edit_user_dvd_path(user_dvd) %></td>
-        <td><%= link_to 'Destroy', user_dvd, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= rental.dvd_id %></td>
+        <td><%= rental.user_id %></td>
+        <td><%= rental.rent_date %></td>
+        <td><%= rental.return_date %></td>
+        <td><%= rental.total_price %></td>
+        <td><%= rental.returned %></td>
+        <td><%= link_to 'Show', rental %></td>
+        <td><%= link_to 'Edit', edit_rental_path(rental) %></td>
+        <td><%= link_to 'Destroy', rental, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New User dvd', new_user_dvd_path %>
+<%= link_to 'New rental', new_rental_path %>

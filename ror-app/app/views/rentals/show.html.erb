@@ -2,33 +2,33 @@
 
 <p>
   <strong>Dvd:</strong>
-  <%= @user_dvd.dvd_id %>
+  <%= @rental.dvd_id %>
 </p>
 
 <p>
   <strong>User:</strong>
-  <%= @user_dvd.user_id %>
+  <%= @rental.user_id %>
 </p>
 
 <p>
   <strong>Rent date:</strong>
-  <%= @user_dvd.rent_date %>
+  <%= @rental.rent_date %>
 </p>
 
 <p>
   <strong>Return date:</strong>
-  <%= @user_dvd.return_date %>
+  <%= @rental.return_date %>
 </p>
 
 <p>
   <strong>Total price:</strong>
-  <%= @user_dvd.total_price %>
+  <%= @rental.total_price %>
 </p>
 
 <p>
   <strong>Returned:</strong>
-  <%= @user_dvd.returned %>
+  <%= @rental.returned %>
 </p>
 
-<%= link_to 'Edit', edit_user_dvd_path(@user_dvd) %> |
-<%= link_to 'Back', user_dvds_path %>
+<%= link_to 'Edit', edit_rental_path(@rental) %> |
+<%= link_to 'Back', rentals_path %>

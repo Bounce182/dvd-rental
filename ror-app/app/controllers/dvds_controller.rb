@@ -15,6 +15,8 @@ class DvdsController < ApplicationController
   # GET /dvds/new
   def new
     @dvd = Dvd.new
+    @genres = Genre.all
+    @languages = Language.all
   end
 
   # GET /dvds/1/edit

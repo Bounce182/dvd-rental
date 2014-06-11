@@ -1,5 +1,6 @@
 class DvdsController < ApplicationController
   before_action :set_dvd, only: [:show, :edit, :update, :destroy]
+  before_action :set_genres, :set_languages, only: [:new, :edit]
   before_action :delete_genres, :delete_languages, only: [:update]
   after_action :add_genres, :add_languages, only: [:create, :update]
 
@@ -17,14 +18,10 @@ class DvdsController < ApplicationController
   # GET /dvds/new
   def new
     @dvd = Dvd.new
-    @genres = Genre.all
-    @languages = Language.all
   end
 
   # GET /dvds/1/edit
   def edit
-    @genres = Genre.all
-    @languages = Language.all
   end
 
   # POST /dvds
@@ -73,7 +70,7 @@ class DvdsController < ApplicationController
     end
 
     def dvd_params
-      params.require(:dvd).permit(:title, :description, :year, :length)
+      params.require(:dvd).permit(:title, :description, :year, :genre, :language, :length)
     end
 
     def add_languages
@@ -90,6 +87,14 @@ class DvdsController < ApplicationController
           @dvd.genres << Genre.find(g)
         end
       end
+    end
+
+    def set_genres
+      @genres = Genre.all
+    end
+
+    def set_languages
+      @languages = Language.all
     end
 
     def delete_genres

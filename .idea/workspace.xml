@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="685abf0f-29dc-4741-913e-68e827473fef" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/app/views/dvds/_form.html.erb" afterPath="$PROJECT_DIR$/ror-app/app/views/dvds/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/app/models/dvd.rb" afterPath="$PROJECT_DIR$/ror-app/app/models/dvd.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/app/controllers/dvds_controller.rb" afterPath="$PROJECT_DIR$/ror-app/app/controllers/dvds_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/app/controllers/genres_controller.rb" afterPath="$PROJECT_DIR$/ror-app/app/controllers/genres_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/app/views/genres/index.html.erb" afterPath="$PROJECT_DIR$/ror-app/app/views/genres/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/app/views/languages/index.html.erb" afterPath="$PROJECT_DIR$/ror-app/app/views/languages/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/app/views/rentals/index.html.erb" afterPath="$PROJECT_DIR$/ror-app/app/views/rentals/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/app/views/users/index.html.erb" afterPath="$PROJECT_DIR$/ror-app/app/views/users/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/app/controllers/languages_controller.rb" afterPath="$PROJECT_DIR$/ror-app/app/controllers/languages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/app/controllers/rentals_controller.rb" afterPath="$PROJECT_DIR$/ror-app/app/controllers/rentals_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/ror-app/app/controllers/users_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dvd-rental.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +33,48 @@
     <favorites_list name="dvd-rental" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="dvd.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ror-app/app/models/dvd.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+              <caret line="1" column="10" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ror-app/app/views/dvds/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.881356" vertical-offset="0" max-vertical-offset="705">
+              <caret line="31" column="144" selection-start-line="31" selection-start-column="139" selection-end-line="31" selection-end-column="144" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dvds_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ror-app/app/controllers/dvds_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.18202" vertical-offset="0" max-vertical-offset="1740">
+              <caret line="71" column="18" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ror-app/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="750">
+              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -67,16 +103,13 @@
         <option value="$PROJECT_DIR$/ror-app/db/migrate/20140610151401_create_user_dvds.rb" />
         <option value="$PROJECT_DIR$/ror-app/db/migrate/20140610172940_rename_table_user_dvds.rb" />
         <option value="$PROJECT_DIR$/ror-app/db/migrate/20140610173358_drop_dvds_users_table.rb" />
-        <option value="$PROJECT_DIR$/ror-app/app/models/dvd.rb" />
         <option value="$PROJECT_DIR$/ror-app/app/models/user.rb" />
         <option value="$PROJECT_DIR$/ror-app/app/models/genre.rb" />
         <option value="$PROJECT_DIR$/ror-app/app/models/language.rb" />
         <option value="$PROJECT_DIR$/ror-app/app/views/rentals/index.json.jbuilder" />
         <option value="$PROJECT_DIR$/ror-app/app/views/rentals/show.json.jbuilder" />
-        <option value="$PROJECT_DIR$/ror-app/app/views/dvds/_form.html.erb" />
         <option value="$PROJECT_DIR$/ror-app/app/views/index/index.html.erb" />
         <option value="$PROJECT_DIR$/ror-app/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/ror-app/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/ror-app/app/views/rentals/show.html.erb" />
         <option value="$PROJECT_DIR$/ror-app/app/views/users/show.json.jbuilder" />
         <option value="$PROJECT_DIR$/ror-app/app/views/users/_form.html.erb" />
@@ -90,7 +123,6 @@
         <option value="$PROJECT_DIR$/ror-app/app/views/rentals/_form_edit.html.erb" />
         <option value="$PROJECT_DIR$/ror-app/app/views/rentals/_form_new.html.erb" />
         <option value="$PROJECT_DIR$/ror-app/app/views/users/new.html.erb" />
-        <option value="$PROJECT_DIR$/ror-app/app/controllers/dvds_controller.rb" />
         <option value="$PROJECT_DIR$/ror-app/app/controllers/genres_controller.rb" />
         <option value="$PROJECT_DIR$/ror-app/app/controllers/languages_controller.rb" />
         <option value="$PROJECT_DIR$/ror-app/app/controllers/rentals_controller.rb" />
@@ -100,6 +132,10 @@
         <option value="$PROJECT_DIR$/ror-app/app/views/languages/index.html.erb" />
         <option value="$PROJECT_DIR$/ror-app/app/views/genres/index.html.erb" />
         <option value="$PROJECT_DIR$/ror-app/app/views/dvds/index.html.erb" />
+        <option value="$PROJECT_DIR$/ror-app/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/ror-app/app/controllers/dvds_controller.rb" />
+        <option value="$PROJECT_DIR$/ror-app/app/models/dvd.rb" />
+        <option value="$PROJECT_DIR$/ror-app/app/views/dvds/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -206,10 +242,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -233,55 +265,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rentals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ror-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ror-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="languages" />
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -333,7 +317,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="genres" />
+              <option name="myItemId" value="dvds" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -355,11 +339,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvds" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -715,13 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ror-app/app/models/dvd.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ror-app/app/views/dvds/index.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="728">
@@ -769,13 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03521127" vertical-offset="0" max-vertical-offset="852">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ror-app/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35211268" vertical-offset="0" max-vertical-offset="852">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -915,22 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ror-app/app/views/dvds/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46875" vertical-offset="0" max-vertical-offset="864">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="158" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ror-app/app/controllers/dvds_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1665">
-          <caret line="36" column="77" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ror-app/app/controllers/genres_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
@@ -971,14 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ror-app/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ror-app/app/views/users/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4104903" vertical-offset="0" max-vertical-offset="877">
@@ -1015,6 +957,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.71835804" vertical-offset="0" max-vertical-offset="877">
           <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ror-app/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ror-app/app/models/dvd.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ror-app/app/views/dvds/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.881356" vertical-offset="0" max-vertical-offset="705">
+          <caret line="31" column="144" selection-start-line="31" selection-start-column="139" selection-end-line="31" selection-end-column="144" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ror-app/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="750">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ror-app/app/controllers/dvds_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.18202" vertical-offset="0" max-vertical-offset="1740">
+          <caret line="71" column="18" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
           <folding />
         </state>
       </provider>

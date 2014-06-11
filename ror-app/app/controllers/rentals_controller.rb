@@ -58,7 +58,7 @@ class RentalsController < ApplicationController
   def destroy
     @rental.destroy
     respond_to do |format|
-      format.html { redirect_to rental_url, notice: 'Rental was successfully destroyed.' }
+      format.html { redirect_to rental_url, notice: 'Rental was successfully deleted.' }
       format.json { head :no_content }
     end
   end

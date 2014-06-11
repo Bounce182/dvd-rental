@@ -1,6 +1,6 @@
 <h1>Listing genres</h1>
 
-<table>
+<table class="listing">
   <thead>
     <tr>
       <th>Title</th>
@@ -12,7 +12,6 @@
     <% @genres.each do |genre| %>
       <tr>
         <td><%= genre.title %></td>
-        <td><%= link_to 'Show', genre %></td>
         <td><%= link_to 'Edit', edit_genre_path(genre) %></td>
         <td><%= link_to 'Destroy', genre, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

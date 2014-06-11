@@ -1,10 +1,10 @@
 <h1>Listing rentals</h1>
 
-<table>
+<table class="listing">
   <thead>
     <tr>
       <th>Dvd</th>
-      <th>User</th>
+      <th>Client</th>
       <th>Rent date</th>
       <th>Return date</th>
       <th>Total price</th>
@@ -16,12 +16,18 @@
   <tbody>
     <% @rentals.each do |rental| %>
       <tr>
-        <td><%= rental.dvd_id %></td>
-        <td><%= rental.user_id %></td>
+        <td><%= link_to rental.dvd.title, rental.dvd %>, <%= rental.dvd.year %></td>
+        <td><%= link_to (rental.user.name + ' ' + rental.user.surname) , rental.user %></td>
         <td><%= rental.rent_date %></td>
         <td><%= rental.return_date %></td>
         <td><%= rental.total_price %></td>
-        <td><%= rental.returned %></td>
+        <td>
+          <% if rental.returned? %>
+            Yes
+          <% else %>
+            No
+          <% end %>
+        </td>
         <td><%= link_to 'Show', rental %></td>
         <td><%= link_to 'Edit', edit_rental_path(rental) %></td>
         <td><%= link_to 'Destroy', rental, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -30,6 +36,3 @@
   </tbody>
 </table>
 
-<br>
-
-<%= link_to 'New rental', new_rental_path %>

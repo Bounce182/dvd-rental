@@ -7,11 +7,6 @@ class GenresController < ApplicationController
     @genres = Genre.all
   end
 
-  # GET /genres/1
-  # GET /genres/1.json
-  def show
-  end
-
   # GET /genres/new
   def new
     @genre = Genre.new
@@ -28,7 +23,7 @@ class GenresController < ApplicationController
 
     respond_to do |format|
       if @genre.save
-        format.html { redirect_to @genre, notice: 'Genre was successfully created.' }
+        format.html { redirect_to genres_path, notice: 'Genre was successfully created.' }
         format.json { render :show, status: :created, location: @genre }
       else
         format.html { render :new }
@@ -42,7 +37,7 @@ class GenresController < ApplicationController
   def update
     respond_to do |format|
       if @genre.update(genre_params)
-        format.html { redirect_to @genre, notice: 'Genre was successfully updated.' }
+        format.html { redirect_to genres_path, notice: 'Genre was successfully updated.' }
         format.json { render :show, status: :ok, location: @genre }
       else
         format.html { render :edit }

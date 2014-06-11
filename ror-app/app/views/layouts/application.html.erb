@@ -19,16 +19,18 @@
           <div class="menu-caption">MAIN MENU</div>
           <ul class="left-menu">
             <li><%= link_to 'Home',root_path %></li>
-            <li><%= link_to 'Dvds', '/dvds'  %></li>
-            <li><%= link_to 'Languages', '/languages'  %></li>
-            <li><%= link_to 'Genres', '/genres'  %></li>
-            <li><%= link_to 'Rentals', '/rentals'  %></li>
-            <li><%= link_to 'Clients', '/users'  %></li>
+            <li><%= link_to 'Dvds', dvds_path  %></li>
+            <li><%= link_to 'Languages', languages_path  %></li>
+            <li><%= link_to 'Genres', genres_path  %></li>
+            <li><%= link_to 'Rentals', rentals_path  %></li>
+            <li><%= link_to 'Clients', users_path  %></li>
           </ul>
         </div>
       </div>
       <div class="right">
-        <div id="app-msg">Here comes app message!</div>
+        <% flash.each do |name, msg| %>
+            <div class="app-msg"><%= msg %></div>
+        <% end %>
         <%= yield %>
       </div>
       <div class="clear"></div>

@@ -100,7 +100,7 @@ select{
     padding-left: 15px;
 }
 
-#app-msg{
+.app-msg{
     margin-top: 10px;
     height: 20px;
     background-color: darkorange;

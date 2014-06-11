@@ -2,12 +2,12 @@
 
 <p>
   <strong>Dvd:</strong>
-  <%= @rental.dvd_id %>
+  <%= link_to (@rental.dvd.title + ', ' + @rental.dvd.year.to_s), @rental.dvd %>
 </p>
 
 <p>
-  <strong>User:</strong>
-  <%= @rental.user_id %>
+  <strong>Client:</strong>
+  <%= link_to (@rental.user.name + ' ' + @rental.user.surname) , @rental.user %>
 </p>
 
 <p>
@@ -27,7 +27,11 @@
 
 <p>
   <strong>Returned:</strong>
-  <%= @rental.returned %>
+  <% if @rental.returned? %>
+      Yes
+  <% else %>
+      No
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_rental_path(@rental) %> |

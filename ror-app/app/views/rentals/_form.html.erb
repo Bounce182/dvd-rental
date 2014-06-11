@@ -12,12 +12,13 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :dvd_id %><br>
-    <%= f.number_field :dvd_id %>
+    <%= f.label :dvd_title_year %><br>
+    <%= link_to (@rental.dvd.title + ', ' + @rental.dvd.year.to_s), @rental.dvd %>
   </div>
+
   <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
+    <%= f.label :user_name_surname %><br>
+    <%= link_to (@rental.user.name + ' ' + @rental.user.surname) , @rental.user %>
   </div>
   <div class="field">
     <%= f.label :rent_date %><br>

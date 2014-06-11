@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140610173358) do
+ActiveRecord::Schema.define(version: 20140611074104) do
 
   create_table "dvds", force: true do |t|
     t.string   "title"
@@ -63,7 +63,6 @@ ActiveRecord::Schema.define(version: 20140610173358) do
     t.string   "name",       limit: 50
     t.string   "surname",    limit: 50
     t.string   "email",      limit: 100
-    t.string   "password"
     t.string   "phone",      limit: 20
     t.string   "address"
     t.datetime "created_at"

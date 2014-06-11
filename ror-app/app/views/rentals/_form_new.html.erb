@@ -1,0 +1,43 @@
+<%= form_for(@rental) do |f| %>
+  <% if @rental.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rental.errors.count, "error") %> prohibited this rental from being saved:</h2>
+
+      <ul>
+      <% @rental.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :dvd %><br>
+    <%= link_to (@dvd.title + ', ' + @dvd.year.to_s), @dvd %>
+    <%= f.hidden_field :dvd_id, :value => @dvd.id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :client %><br>
+    <%=
+        f.select :user_id, options_for_select(@users.map {|g| [g.name + ' ' + g.surname, g.id]}),
+        {:include_blank=> '- Choose -'}, {:multiple => false}
+    %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rent_date %><br>
+    <%= f.date_select :rent_date %>
+  </div>
+  <div class="field">
+    <%= f.label :return_date %><br>
+    <%= f.date_select :return_date %>
+  </div>
+  <div class="field">
+    <%= f.label :total_price %><br>
+    <%= f.text_field :total_price %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

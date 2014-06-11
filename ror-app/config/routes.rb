@@ -7,6 +7,9 @@ Rails.application.routes.draw do
 
   root to: "index#index"
 
+  get 'rentals/new/dvd/:dvd_id' => 'rentals#new', as: :new_dvd_rental
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

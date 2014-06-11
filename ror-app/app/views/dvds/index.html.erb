@@ -24,14 +24,18 @@
         <td>
           <%= dvd.languages.map { |language| language.title}.join(', ') %>
         </td>
-        <td><%= dvd.length %></td>
+        <td><%= dvd.length %> min</td>
         <td>
-          <% dvd.rentals.map do |rental| %>
-                <% if !rental.returned? %>
-                   Not available. Return date: <%= rental.return_date %>
+          <% if dvd.rentals.count > 0 %>
+            <% dvd.rentals.map do |rental| %>
+                <% if rental.returned? %>
+                    <%= link_to 'Available. Add to rent now!', new_dvd_rental_path(:dvd_id => dvd.id) %>
                 <% else %>
-                  <%= link_to 'Available. Add to rent now!', rental %>
+                    Not available. Return date: <%= rental.return_date %>
                 <% end %>
+            <% end %>
+          <% else %>
+              <%= link_to 'Available. Add to rent now!', new_dvd_rental_path(:dvd_id => dvd.id) %>
           <% end %>
         </td>
         <td><%= link_to 'Show', dvd %></td>

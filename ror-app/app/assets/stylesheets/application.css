@@ -48,7 +48,9 @@ ul li{
 }
 
 input[type=text],
-input[type=number]{
+input[type=number],
+input[type=email],
+input[type=tel]{
     width: 200px;
 }
 

@@ -38,7 +38,7 @@ class RentalsController < ApplicationController
     @users = User.all
     respond_to do |format|
       if @rental.save
-        format.html { redirect_to @rental, notice: 'Rental was successfully created.' }
+        format.html { redirect_to [@dvd,@rental], notice: 'Rental was successfully created.' }
         format.json { render :show, status: :created, location: @rental }
       else
         format.html { render :new }

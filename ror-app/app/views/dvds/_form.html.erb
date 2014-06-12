@@ -25,7 +25,8 @@
   <div class="field">
     <%= f.label :genres %><br>
     <%# @todo: Check why on error @genres are nil (as well as @languages. So using direct call at the moment) %>
-    <%= f.select :genres, options_for_select(Genre.all.map {|g| [g.title,g.id]}, @dvd.genres.map {|dg| dg.id}), {:include_blank=> false}, {:multiple => true} %>
+
+    <%= f.collection_select(:genres, Genre.all, :id, :title, {:selected => @dvd.genres.map {|dl| dl.id}, :include_blank => false}, {:multiple => true}) %>
   </div>
   <div class="field">
     <%= f.label :languages %><br>
@@ -39,3 +40,7 @@
     <%= f.submit %>
   </div>
 <% end %>
+
+<%= params  %>
+<br><br>
+<%= @dvd.genres.count %>

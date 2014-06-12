@@ -43,6 +43,7 @@ class DvdsController < ApplicationController
   # PATCH/PUT /dvds/1
   # PATCH/PUT /dvds/1.json
   def update
+
     respond_to do |format|
       if @dvd.update(dvd_params)
         format.html { redirect_to @dvd, notice: 'Dvd was successfully updated.' }
@@ -66,11 +67,15 @@ class DvdsController < ApplicationController
 
   private
     def set_dvd
-      @dvd = Dvd.find(params[:id])
+      if params[:id]
+        @dvd = Dvd.find(params[:id])
+      else
+        @dvd = Dvd.find(params[:dvd][:id])
+      end
     end
 
     def dvd_params
-      params.require(:dvd).permit(:title, :description, :year, :genre, :language, :length)
+      params.require(:dvd).permit(:title, :description, :year, :genres, :languages, :length)
     end
 
     def add_languages

@@ -27,7 +27,15 @@ class RentalsController < ApplicationController
   # POST /rentals.json
   def create
     @rental = Rental.new(rental_params)
+    @dvd = Dvd.find(params[:rental][:dvd_id])
 
+    if params[:rental][:user_id]
+      @user_id = params[:rental][:user_id]
+    else
+      @user_id = 0
+    end
+
+    @users = User.all
     respond_to do |format|
       if @rental.save
         format.html { redirect_to @rental, notice: 'Rental was successfully created.' }
@@ -58,7 +66,7 @@ class RentalsController < ApplicationController
   def destroy
     @rental.destroy
     respond_to do |format|
-      format.html { redirect_to rental_url, notice: 'Rental was successfully deleted.' }
+      format.html { redirect_to rentals_url, notice: 'Rental was successfully deleted.' }
       format.json { head :no_content }
     end
   end

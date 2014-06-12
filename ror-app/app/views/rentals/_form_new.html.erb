@@ -20,11 +20,10 @@
   <div class="field">
     <%= f.label :client %><br>
     <%=
-        f.select :user_id, options_for_select(@users.map {|g| [g.name + ' ' + g.surname, g.id]}),
+        f.select :user_id, options_for_select(@users.map {|g| [g.name + ' ' + g.surname, g.id]}, @user_id),
         {:include_blank=> '- Choose -'}, {:multiple => false}
     %>
   </div>
-
   <div class="field">
     <%= f.label :rent_date %><br>
     <%= f.date_select :rent_date %>
@@ -40,4 +39,5 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+
 <% end %>

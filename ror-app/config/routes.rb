@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  resources :dvds do
+    resources :rentals
+  end
+
   resources :rentals
   resources :languages
   resources :genres
@@ -7,7 +12,7 @@ Rails.application.routes.draw do
 
   root to: "index#index"
 
-  get 'rentals/new/dvd/:dvd_id' => 'rentals#new', as: :new_dvd_rental
+  #get 'dvd/:dvd_id/rentals/new' => 'rentals#new', as: :new_dvd_rental
 
 
   # The priority is based upon order of creation: first created -> highest priority.

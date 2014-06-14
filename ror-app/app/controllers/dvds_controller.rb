@@ -2,13 +2,12 @@ class DvdsController < ApplicationController
   before_action :set_dvd, only: [:show, :edit, :update, :destroy]
   before_action :set_genres, :set_languages, only: [:new, :edit]
   before_action :delete_genres, :delete_languages, only: [:update]
-  after_action :add_genres, :add_languages, only: [:create, :update]
 
   rescue_from ActiveRecord::RecordNotFound, with: :invalid_dvd
 
   # GET /dvds
   # GET /dvds.json
-  def indexas
+  def index
     @dvds = Dvd.all
   end
 
@@ -77,23 +76,7 @@ class DvdsController < ApplicationController
     end
 
     def dvd_params
-      params.require(:dvd).permit(:title, :description, :year, :genres, :languages, :length)
-    end
-
-    def add_languages
-      params[:dvd][:languages].each do |l|
-        if !l.empty?
-          @dvd.languages << Language.find(l)
-        end
-      end
-    end
-
-    def add_genres
-      params[:dvd][:genres].each do |g|
-        if !g.empty?
-          @dvd.genres << Genre.find(g)
-        end
-      end
+      params.require(:dvd).permit(:title, :description, :year, :length, genre_ids:[], language_ids:[])
     end
 
     def set_genres

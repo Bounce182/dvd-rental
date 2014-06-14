@@ -1,5 +1,6 @@
 class GenresController < ApplicationController
   before_action :set_genre, only: [:show, :edit, :update, :destroy]
+  rescue_from ActiveRecord::RecordNotFound, with: :invalid_genre
 
   # GET /genres
   # GET /genres.json
@@ -65,5 +66,10 @@ class GenresController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def genre_params
       params.require(:genre).permit(:title)
+    end
+
+    def invalid_genre
+      logger.error "Attempt to access invalid genre #{params[:id]}"
+      redirect_to genres_path, notice: 'Genre not found.'
     end
 end

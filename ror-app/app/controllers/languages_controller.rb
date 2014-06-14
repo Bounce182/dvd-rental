@@ -1,6 +1,8 @@
 class LanguagesController < ApplicationController
   before_action :set_language, only: [:show, :edit, :update, :destroy]
 
+  rescue_from ActiveRecord::RecordNotFound, with: :invalid_language
+
   # GET /languages
   # GET /languages.json
   def index
@@ -65,4 +67,10 @@ class LanguagesController < ApplicationController
     def language_params
       params.require(:language).permit(:title)
     end
+
+  def invalid_language
+    logger.error "Attempt to access invalid language #{params[:id]}"
+    redirect_to languages_path, notice: 'Language not found.'
+  end
+
 end

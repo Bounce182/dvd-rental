@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
+  rescue_from ActiveRecord::RecordNotFound, with: :invalid_user
+
   # GET /users
   # GET /users.json
   def index
@@ -70,5 +72,10 @@ class UsersController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
       params.require(:user).permit(:name, :surname, :email, :phone, :address)
+    end
+
+    def invalid_user
+      logger.error "Attempt to access invalid user #{params[:id]}"
+      redirect_to users_path, notice: 'User not found.'
     end
 end

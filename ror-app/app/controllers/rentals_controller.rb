@@ -1,6 +1,8 @@
 class RentalsController < ApplicationController
   before_action :set_rental, only: [:show, :edit, :update, :destroy]
 
+  rescue_from ActiveRecord::RecordNotFound, with: :invalid_rental
+
   # GET /rentals
   # GET /rentals.json
   def index
@@ -80,5 +82,10 @@ class RentalsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def rental_params
       params.require(:rental).permit(:dvd_id, :user_id, :rent_date, :return_date, :total_price, :returned)
+    end
+
+    def invalid_rental
+      logger.error "Attempt to access invalid rental #{params[:id]}"
+      redirect_to rentals_path, notice: 'Rental not found.'
     end
 end

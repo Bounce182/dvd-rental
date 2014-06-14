@@ -4,9 +4,11 @@ class DvdsController < ApplicationController
   before_action :delete_genres, :delete_languages, only: [:update]
   after_action :add_genres, :add_languages, only: [:create, :update]
 
+  rescue_from ActiveRecord::RecordNotFound, with: :invalid_dvd
+
   # GET /dvds
   # GET /dvds.json
-  def index
+  def indexas
     @dvds = Dvd.all
   end
 
@@ -110,6 +112,11 @@ class DvdsController < ApplicationController
     def delete_languages
       # Delete all dvd language relations
       @dvd.languages.delete_all
+    end
+
+    def invalid_dvd
+      logger.error "Attempt to access invalid dvd #{params[:id]}"
+      redirect_to dvds_path, notice: 'DVD not found.'
     end
 
 end

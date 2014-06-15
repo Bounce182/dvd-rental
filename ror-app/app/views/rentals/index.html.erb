@@ -1,5 +1,11 @@
 <h1>Listing rentals</h1>
 
+<% if params[:debtor].present?  %>
+    <%= link_to 'Show all rentals', rentals_path %>
+<% else %>
+    <%= link_to 'Show debtors', rentals_path(:debtor => true)  %>
+<% end %>
+
 <table class="listing">
   <thead>
     <tr>

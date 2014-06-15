@@ -7,6 +7,10 @@ class RentalsController < ApplicationController
   # GET /rentals.json
   def index
     @rentals = Rental.all.paginate(:page => params[:page], :per_page => 5)
+
+    filtering_params(params).each_key do |key|
+      @rentals = @rentals.public_send(key).paginate(:page => params[:page], :per_page => 5) if key.present?
+    end
   end
 
   # GET /rentals/1
@@ -81,11 +85,16 @@ class RentalsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def rental_params
-      params.require(:rental).permit(:dvd_id, :user_id, :rent_date, :return_date, :total_price, :returned)
+      params.require(:rental).permit(:dvd_id, :user_id, :rent_date, :return_date, :total_price, :returned, :debtors)
     end
 
     def invalid_rental
       logger.error "Attempt to access invalid rental #{params[:id]}"
       redirect_to rentals_path, notice: 'Rental not found.'
+    end
+
+    def filtering_params(params)
+      # Add more params that filter debtors list (if needed)
+      params.slice(:debtor)
     end
 end

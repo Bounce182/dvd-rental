@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140615125902) do
+ActiveRecord::Schema.define(version: 20140615152222) do
 
   create_table "dvds", force: true do |t|
     t.string   "title"
@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(version: 20140615125902) do
     t.date     "rent_date"
     t.date     "return_date"
     t.decimal  "total_price"
-    t.boolean  "returned"
+    t.boolean  "returned",    default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

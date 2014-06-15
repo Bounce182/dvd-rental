@@ -8,7 +8,7 @@ class DvdsController < ApplicationController
   # GET /dvds
   # GET /dvds.json
   def index
-    @dvds = Dvd.all
+    @dvds = Dvd.all.paginate(:page => params[:page], :per_page => 5)
   end
 
   # GET /dvds/1

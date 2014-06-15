@@ -167,7 +167,10 @@ table.listing td{
 }
 
 
-
 .clear{
     clear: both;
+}
+
+.center{
+    text-align:center;
 }

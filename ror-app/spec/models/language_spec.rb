@@ -1,4 +1,7 @@
 describe Language do
+
+  it { should have_and_belong_to_many(:dvds) }
+
   describe 'title validation' do
     context 'title is present' do
       before(:each) do
@@ -21,6 +24,9 @@ describe Language do
         expect(duplicate).to have(1).errors_on(:title)
       end
 
+      it 'returns full title' do
+        expect(@lang.title).to eq 'Italian'
+      end
     end
 
     context 'title is not present' do

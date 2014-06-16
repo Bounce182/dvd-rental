@@ -43,5 +43,7 @@ group :test do
 
   # This was removed from rspec version 3, so now we need to add it manually if we need it
   gem 'rspec-collection_matchers'
+
+  gem 'shoulda'
 end
 

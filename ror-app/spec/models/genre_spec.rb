@@ -1,4 +1,7 @@
 describe Genre do
+
+  it { should have_and_belong_to_many(:dvds) }
+
   describe 'title validation' do
     context 'title is present' do
       before(:each) do
@@ -19,6 +22,10 @@ describe Genre do
         Genre.create(title: 'Science Fiction')
         duplicate = Genre.new(title: 'science fiCtiOn')
         expect(duplicate).to have(1).errors_on(:title)
+      end
+
+      it 'returns full title' do
+        expect(@genre.title).to eq 'Drama'
       end
 
     end

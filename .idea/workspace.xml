@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="685abf0f-29dc-4741-913e-68e827473fef" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/app/views/rentals/index.html.erb" afterPath="$PROJECT_DIR$/ror-app/app/views/rentals/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/app/models/rental.rb" afterPath="$PROJECT_DIR$/ror-app/app/models/rental.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/app/controllers/rentals_controller.rb" afterPath="$PROJECT_DIR$/ror-app/app/controllers/rentals_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/db/schema.rb" afterPath="$PROJECT_DIR$/ror-app/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/Gemfile.lock" afterPath="$PROJECT_DIR$/ror-app/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/Gemfile" afterPath="$PROJECT_DIR$/ror-app/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ror-app/config/application.rb" afterPath="$PROJECT_DIR$/ror-app/config/application.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dvd-rental.iws" />
@@ -35,31 +34,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="rentals_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ror-app/app/controllers/rentals_controller.rb">
+      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ror-app/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.58157605" vertical-offset="689" max-vertical-offset="1590">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.44950056" vertical-offset="0" max-vertical-offset="901">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ror-app/app/views/rentals/index.html.erb">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ror-app/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="855">
-              <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
+              <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rental.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ror-app/app/models/rental.rb">
+      <file leaf-file-name=".rspec" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ror-app/.rspec">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-              <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ror-app/config/database.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -78,9 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/ror-app/app/controllers/index_controller.rb" />
-        <option value="$PROJECT_DIR$/ror-app/db/migrate/20140610100300_remove_dvds_columns.rb" />
-        <option value="$PROJECT_DIR$/ror-app/db/migrate/20140610070633_remove_fields_from_table_dvds.rb" />
         <option value="$PROJECT_DIR$/ror-app/db/migrate/20140610073737_create_languages.rb" />
         <option value="$PROJECT_DIR$/ror-app/db/migrate/20140610075259_dvds_languages.rb" />
         <option value="$PROJECT_DIR$/ror-app/app/models/dvd_user.rb" />
@@ -114,7 +120,6 @@
         <option value="$PROJECT_DIR$/ror-app/app/views/rentals/show.html.erb" />
         <option value="$PROJECT_DIR$/ror-app/app/controllers/languages_controller.rb" />
         <option value="$PROJECT_DIR$/ror-app/app/controllers/genres_controller.rb" />
-        <option value="$PROJECT_DIR$/ror-app/Gemfile" />
         <option value="$PROJECT_DIR$/ror-app/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/ror-app/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/ror-app/app/controllers/dvds_controller.rb" />
@@ -129,14 +134,18 @@
         <option value="$PROJECT_DIR$/ror-app/db/migrate/20140615152222_set_column_default_value_for_table_rentals.rb" />
         <option value="$PROJECT_DIR$/ror-app/app/controllers/rentals_controller.rb" />
         <option value="$PROJECT_DIR$/ror-app/app/views/rentals/index.html.erb" />
+        <option value="$PROJECT_DIR$/ror-app/Gemfile" />
+        <option value="$PROJECT_DIR$/ror-app/config/database.yml" />
+        <option value="$PROJECT_DIR$/ror-app/.rspec" />
+        <option value="$PROJECT_DIR$/ror-app/config/application.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="51" />
-    <option name="y" value="24" />
-    <option name="width" value="1869" />
-    <option name="height" value="1056" />
+    <option name="x" value="50" />
+    <option name="y" value="-4" />
+    <option name="width" value="1871" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -164,7 +173,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -194,6 +202,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ror-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dvd-rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dvd-rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ror-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -265,188 +291,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ror-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ror-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="environments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ror-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ror-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rentals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ror-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ror-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ror-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dvd-rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ror-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -592,7 +443,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="24" width="1869" height="1056" extended-state="6" />
+    <frame x="50" y="-4" width="1871" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -600,7 +451,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38782227" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38014263" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957035" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -608,12 +459,32 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32736573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32736573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957035" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32736573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957035" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38782227" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957035" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -637,27 +508,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ror-app/app/views/users/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25655645" vertical-offset="0" max-vertical-offset="877">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ror-app/app/views/users/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="877">
-          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ror-app/app/views/users/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="877">
-          <caret line="0" column="18" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ror-app/app/controllers/index_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
@@ -697,7 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39955604" vertical-offset="450" max-vertical-offset="1635">
           <caret line="54" column="26" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -831,7 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -846,7 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="705">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -861,7 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="165">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -869,7 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1230">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -877,7 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="339" max-vertical-offset="1215">
           <caret line="70" column="21" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -885,7 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30786774" vertical-offset="0" max-vertical-offset="877">
           <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -893,7 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="852">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -901,7 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -909,15 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.083240844" vertical-offset="0" max-vertical-offset="901">
           <caret line="5" column="61" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ror-app/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03329634" vertical-offset="0" max-vertical-offset="901">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -925,7 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1769" max-vertical-offset="2730">
           <caret line="174" column="9" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -933,7 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13318536" vertical-offset="0" max-vertical-offset="1305">
           <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -941,7 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5131129" vertical-offset="0" max-vertical-offset="877">
           <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -957,7 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03329634" vertical-offset="0" max-vertical-offset="901">
           <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -965,7 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13318536" vertical-offset="0" max-vertical-offset="901">
           <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -973,7 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1665">
           <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -981,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-25.916666" vertical-offset="68" max-vertical-offset="945">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="52" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -989,23 +814,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03329634" vertical-offset="0" max-vertical-offset="901">
           <caret line="2" column="66" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ror-app/app/models/rental.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ror-app/app/views/rentals/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="855">
+        <state vertical-scroll-proportion="0.085518815" vertical-offset="0" max-vertical-offset="877">
           <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1013,6 +828,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.58157605" vertical-offset="689" max-vertical-offset="1590">
           <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ror-app/app/models/rental.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06659268" vertical-offset="0" max-vertical-offset="901">
+          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ror-app/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ror-app/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
+          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ror-app/.rspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ror-app/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44950056" vertical-offset="0" max-vertical-offset="901">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
           <folding />
         </state>
       </provider>
